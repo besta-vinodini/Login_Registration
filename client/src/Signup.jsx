@@ -3,7 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import axios from 'axios'; // Import axios
 
 // 🔹 Store backend URL in a variable
-const API_URL = "http://localhost:5000/api/auth/register";
+const API_URL = `${import.meta.env.VITE_API_URL}/api/auth/register`;
+
 
 function Signup() {
   const [formData, setFormData] = useState({

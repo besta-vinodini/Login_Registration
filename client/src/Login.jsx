@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const API_URL = "http://localhost:5000/api/auth/login";// ✅ Backend endpoint
+// ✅ Backend endpoint
+const API_URL = `${import.meta.env.VITE_API_URL}/api/auth/login`;
+
 
 function Login() {
   const [formData, setFormData] = useState({
